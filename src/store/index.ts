@@ -10,6 +10,7 @@ export const store = configureStore({
     carrinho: carrinhoReducer,
     favorito: favoritoReducer,
     [api.reducerPath]: api.reducer
+    
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(api.middleware)
